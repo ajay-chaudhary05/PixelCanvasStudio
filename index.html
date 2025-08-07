@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="PixelCanvas Studio - Professional web development and design services. Creating exceptional digital experiences through innovative solutions.">
+    <meta name="keywords" content="web development, web design, responsive design, UI/UX design, digital agency">
+    <title>PixelCanvas Studio - Web Development Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="alternate icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="logo-symbol" aria-hidden="true">
+                        <div class="pixel-grid">
+                            <div class="pixel"></div>
+                            <div class="pixel active"></div>
+                            <div class="pixel"></div>
+                            <div class="pixel active"></div>
+                            <div class="pixel active"></div>
+                            <div class="pixel"></div>
+                        </div>
+                        <div class="brush-stroke"></div>
+                    </div>
+                    <span class="logo-text">PixelCanvas Studio</span>
+                </div>
+                <div class="nav-container">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu"
+                        aria-controls="main-menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <div class="nav-wrapper" id="main-menu">
+                        <ul class="nav-links">
+                            <li><a href="#home" class="nav-link" tabindex="0">Home</a></li>
+                            <li><a href="#services" class="nav-link" tabindex="0">Services</a></li>
+                            <li><a href="#work" class="nav-link" tabindex="0">Work</a></li>
+                            <li><a href="#about" class="nav-link" tabindex="0">About</a></li>
+                            <li><button class="contact-btn" tabindex="0">Contact Us</button></li>
+                            <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+                                    <span class="theme-toggle-icon" aria-hidden="true">🌞</span>
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero fade-up" aria-labelledby="hero-title" data-animate-delay="0">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="fade-up" data-animate-delay="0">We Create Web Products & Designs That
+                        People Love to Use</h1>
+                    <p class="fade-up" data-animate-delay="0">Award winning design & development agency helping
+                        businesses create beautiful products & Designs</p>
+                    <div class="hero-buttons fade-up" data-animate-delay="0">
+                        <button class="primary-btn get-started-btn pulse" onclick="window.location.href='contact-card.html'">
+                            Get Started
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats fade-up" aria-label="Company statistics" data-animate-delay="0">
+                        <div class="stat-item fade-in" data-animate-delay="500">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item fade-in" data-animate-delay="600">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item fade-in" data-animate-delay="700">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape" aria-hidden="true"></div>
+        </section>
+        <section id="services" class="services fade-up" aria-labelledby="services-title" data-animate-delay="0">
+            <div class="container">
+                <h2 id="services-title" class="fade-up" data-animate-delay="100">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card slide-in-left" data-animate-delay="200">
+                        <div class="service-icon fade-in" data-animate-delay="250" aria-hidden="true">🎨</div>
+                        <h3 class="fade-in" data-animate-delay="300">Web Design</h3>
+                        <p class="fade-in" data-animate-delay="350">Beautiful, modern designs that help your brand stand
+                            out and connect with your users.</p>
+                    </div>
+                    <div class="service-card fade-up" data-animate-delay="400">
+                        <div class="service-icon fade-in" data-animate-delay="450" aria-hidden="true">💻</div>
+                        <h3 class="fade-in" data-animate-delay="500">Web Development</h3>
+                        <p class="fade-in" data-animate-delay="550">Custom web applications built with the latest
+                            technologies and best practices.</p>
+                    </div>
+                    <div class="service-card slide-in-right" data-animate-delay="600">
+                        <div class="service-icon fade-in" data-animate-delay="650" aria-hidden="true">📱</div>
+                        <h3 class="fade-in" data-animate-delay="700">Responsive Design</h3>
+                        <p class="fade-in" data-animate-delay="750">Websites that work flawlessly across all devices and
+                            screen sizes.</p>
+                    </div>
+                    <div class="service-card fade-up" data-animate-delay="800">
+                        <div class="service-icon fade-in" data-animate-delay="850" aria-hidden="true">🚀</div>
+                        <h3 class="fade-in" data-animate-delay="900">Performance Optimization</h3>
+                        <p class="fade-in" data-animate-delay="950">Fast-loading websites that provide an excellent user
+                            experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work fade-up" aria-labelledby="work-title" data-animate-delay="0">
+            <div class="container">
+                <h2 id="work-title" class="fade-up" data-animate-delay="100">Our Latest Work</h2>
+                <div class="work-grid">
+                    <div class="work-card fade-up" data-animate-delay="200">
+                        <div class="work-card-inner">
+                            <img src="assets/images/ecommerce-showcase.jpg" alt="E-commerce Platform Project screenshot"
+                            loading="lazy">
+                            <div class="work-info">
+                                <h3>E-commerce Platform</h3>
+                                <p>Modern online store with seamless shopping experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card fade-up" data-animate-delay="300">
+                        <div class="work-card-inner">
+                            <img src="assets/images/business-website.jpg" alt="Business Website Project screenshot"
+                            loading="lazy">
+                            <div class="work-info">
+                                <h3>Business Website</h3>
+                                <p>Corporate website with clean and professional design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card fade-up" data-animate-delay="400">
+                        <div class="work-card-inner">
+                            <img src="assets/images/mobile-app.jpg" alt="Mobile App Interface Project screenshot"
+                            loading="lazy">
+                            <div class="work-info">
+                                <h3>Mobile App Interface</h3>
+                                <p>User-friendly mobile application design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about fade-up" aria-labelledby="about-title" data-animate-delay="0">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text fade-up" data-animate-delay="100">
+                        <h2 id="about-title">About Us</h2>
+                        <p>We are a passionate team of designers and developers dedicated to creating exceptional
+                            digital experiences. With years of experience in the industry, we understand what it takes
+                            to build successful web solutions.</p>
+                        <p>Our approach combines creativity with technical expertise to deliver projects that not only
+                            look great but also perform excellently. We believe in the power of collaboration and
+                            innovation to transform ideas into reality.</p>
+                        <div class="about-stats">
+                            <div class="about-stat fade-up" data-animate-delay="200">
+                                <div class="about-stat-number">25+</div>
+                                <div class="about-stat-label">Projects Delivered</div>
+                            </div>
+                            <div class="about-stat fade-up" data-animate-delay="300">
+                                <div class="about-stat-number">85%</div>
+                                <div class="about-stat-label">Client Satisfaction</div>
+                            </div>
+                            <div class="about-stat fade-up" data-animate-delay="400">
+                                <div class="about-stat-number">24/7</div>
+                                <div class="about-stat-label">Support Available</div>
+                            </div>
+                            <div class="about-stat fade-up" data-animate-delay="500">
+                                <div class="about-stat-number">1+</div>
+                                <div class="about-stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image fade-up" data-animate-delay="200">
+                        <img src="assets/images/team-meeting.jpg" alt="PixelCanvas Studio Team meeting">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact fade-up" aria-labelledby="contact-title" data-animate-delay="0">
+            <div class="container">
+                <h2 id="contact-title" class="fade-up" data-animate-delay="100">Let's Work Together</h2>
+                <div class="contact-content">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form fade-up"
+                        autocomplete="on" aria-label="Contact form" data-animate-delay="200">
+                        <input type="hidden" name="access_key" value="52987a5a-e4b9-47b5-857a-0b2a7dd0a6e2">
+                        
+                        <div class="form-group">
+                            <input id="contact-name" name="name" type="text" placeholder=" " required>
+                            <label for="contact-name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input id="contact-email" name="email" type="email" placeholder=" " required>
+                            <label for="contact-email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" placeholder=" " required></textarea>
+                            <label for="contact-message">Your Message</label>
+                        </div>
+                        
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <button type="submit">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info fade-up" data-animate-delay="300">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-content">
+                                <h4>Address</h4>
+                                <p>106, Paharsar Bharatpur (Raj.)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📧</div>
+                            <div class="contact-info-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:Ajay@pixelcanvasstudio.online">Ajay@pixelcanvasstudio.online</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📞</div>
+                            <div class="contact-info-content">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+917877781848">(+91) 7877781848</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">⏰</div>
+                            <div class="contact-info-content">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link-contact" aria-label="Facebook">
+                                <i>📘</i>
+                            </a>
+                            <a href="#" class="social-link-contact" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link-contact" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link-contact" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">PixelCanvas Studio</span>
+                    </div>
+                    <p class="footer-description">Creating exceptional digital experiences through innovative design and development solutions. We transform ideas into reality with cutting-edge technology and creative excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>Facebook
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>Twitter
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>Instagram
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Responsive Design</a></li>
+                        <li><a href="#services">Performance Optimization</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>106, Paharsar Bharatpur (Raj.)</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:Ajay@pixelcanvasstudio.online">Ajay@pixelcanvasstudio.online</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+917877781848">+(91) 7877781848</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">⏰</span>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PixelCanvas Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

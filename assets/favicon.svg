@@ -1,0 +1,31 @@
+ <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pixel Grid -->
+    <g transform="translate(10, 10)">
+        <!-- Row 1 Pixels -->
+        <rect x="0" y="0" width="10" height="10" rx="2" fill="#e0e0e0">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="12" y="0" width="10" height="10" rx="2" fill="#FF6B00">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="24" y="0" width="10" height="10" rx="2" fill="#e0e0e0">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+        </rect>
+        
+        <!-- Row 2 Pixels -->
+        <rect x="0" y="12" width="10" height="10" rx="2" fill="#FF6B00">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="12" y="12" width="10" height="10" rx="2" fill="#FF6B00">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="24" y="12" width="10" height="10" rx="2" fill="#e0e0e0">
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+        </rect>
+        
+        <!-- Brush Stroke -->
+        <path d="M28 28 L40 22" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round">
+            <animate attributeName="stroke-width" values="4;5;4" dur="2s" repeatCount="indefinite"/>
+        </path>
+    </g>
+</svg>

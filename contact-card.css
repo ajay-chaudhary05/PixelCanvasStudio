@@ -1,0 +1,265 @@
+/* PixelCanvas Studio Contact Card Stylesheet - Cleaned of unused code */
+:root {
+    --primary-color: #FF6B00;
+    --secondary-color: #2A2A2A;
+    --text-color: #333333;
+    --text-light: #666666;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 15px 40px rgba(255, 107, 0, 0.15);
+    --divider-color: #eaeaea;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.business-card {
+    background: var(--card-background);
+    width: 90mm;
+    min-height: 55mm;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.business-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: var(--primary-color);
+    opacity: 0.05;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-symbol {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.pixel {
+    background: var(--secondary-color);
+    opacity: 0.2;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.pixel.active {
+    background: var(--primary-color);
+    opacity: 1;
+}
+
+.brush-stroke {
+    position: absolute;
+    bottom: -4px;
+    right: -8px;
+    width: 20px;
+    height: 8px;
+    background: #2D2D2D;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+}
+
+.logo-section h1 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+#studio-title{
+    background: linear-gradient(135deg, #2D2D2D, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name-title {
+    margin-bottom: 1rem;
+}
+
+.name-title h2 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.name-title p {
+    margin: 0.5rem 0 0;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.divider {
+    height: 1px;
+    background: var(--divider-color);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.contact-item:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.social-link {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--background-color);
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    background: var(--card-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+}
+
+.card-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateX(-5px);
+}
+
+.back-arrow {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+@media (max-width: 400px) {
+    .business-card {
+        width: calc(100vw - 3rem);
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .name-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
